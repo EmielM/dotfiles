@@ -23,10 +23,11 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'kchmck/vim-coffee-script'
 
+Plug 'nsf/gocode'
+Plug 'leafgarland/typescript-vim'
+
 " Add plugins to &runtimepath
 call plug#end()
-
-
 
 colorscheme inkpot
 
@@ -144,7 +145,6 @@ vmap <Leader>d "+d
 nmap <Leader>p "+p
 nmap <Leader>P "+P
 
-
 " Open file selector
 nnoremap <c-p> :FZF<CR>
 nnoremap <Leader>o :FZF<CR>
@@ -169,3 +169,4 @@ endfunction
 command! -bang -nargs=* Rg call Rg(<q-args>)
 noremap <F5> :Rg<Space>
 
+let g:go_fmt_command = "goimports"

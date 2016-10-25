@@ -66,4 +66,3 @@ source "$HOME/.dotfiles/fzf/shell/completion.zsh" 2> /dev/null
 # zfz Key bindings
 source "$HOME/.dotfiles/fzf/shell/key-bindings.zsh"
 
-
